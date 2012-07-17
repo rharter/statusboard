@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+	<head>
+		<title>Status</title>
+		
+		<link rel="stylesheet" href="/style/main.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document.body).ready(function() {
+				$('#weather').load('/weather/current');
+			});
+		</script>
+	</head>
+	<body>
+		<div id="weather"/>
+	</body>
+</html>

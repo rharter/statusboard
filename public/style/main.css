@@ -1,0 +1,25 @@
+body {
+	background: #313131;
+	font-family: "Helvetica Nueue", Helvetica, Arial, sans-serif;
+}
+
+div#weather {
+	width: 30%;
+	padding: 40px 20px;
+	border-radius: 4px;
+	text-align: center;
+	
+	color: white;
+	background: -webkit-linear-gradient(#565656 0%, #404040 100%);
+	border: 1px solid #292929;
+}
+
+div#weather span {
+	margin: 0 auto;
+	font-size: 4em;
+}
+
+div#weather img {
+	margin: 20px auto;
+	display: block;
+}
