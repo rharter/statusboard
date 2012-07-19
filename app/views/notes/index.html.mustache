@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Notes</title>
+	</head>
+	<body>
+		<ul>
+		{{#notes}}
+			<li><a href="/note/{{_id}}">{{name}}</a></li>
+		{{/notes}}
+		{{^notes}}
+			<li>No notes :(</li>
+		{{/notes}}
+		</ul>
+	</body>
+</html>

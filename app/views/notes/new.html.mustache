@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Notes</title>
+	</head>
+	<body>
+		<form action="/note/new" method="post">
+			<label for="name">Name</label>
+			<input name="name" type="text" value="{{name}}"/>
+			
+			<label for="content">Content</label>
+			<textarea name="content" value="{{content}}"></textarea>
+			
+			<label for="public">Public</label>
+			<input name="public" type="checkbox" {{#public}}checked="checked"{{/public}}/>
+			
+			<input type="submit" value="Save"/>
+		</form>
+	</body>
+</html>

@@ -22,3 +22,15 @@ register('/define/:word', controllers.greeter.define, 'GET');
  * Weather
  */
 register('/weather/current', controllers.weather.current, 'GET');
+
+/*
+ * Twitter
+ */
+register('/twitter/search', controllers.twitter.search, 'GET');
+
+register('/notes', controllers.notes.list, 'GET');
+
+register('/note/new', controllers.notes.new, 'GET');
+register('/note/new', controllers.notes.create, 'POST');
+
+register('/note/:id', controllers.notes.show, 'GET');

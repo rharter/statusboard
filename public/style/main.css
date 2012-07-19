@@ -3,6 +3,32 @@ body {
 	font-family: "Helvetica Nueue", Helvetica, Arial, sans-serif;
 }
 
+ul.marquee {
+	width: 98%;
+	height: 42px;
+	margin: 15px auto;
+	background-color: transparent;
+	color: white;
+	border: none;
+}
+
+ul.marquee li {
+	font-size: 32px;
+}
+
+ul.marquee span.from_user {
+	color: #4996d7;
+}
+
+div#twitter span.tweet
+span.from_user {
+	color: #5e7ad7;
+}
+
+div#twitter a {
+	color: #4c8dd2;
+}
+
 div#weather {
 	width: 30%;
 	padding: 40px 20px;

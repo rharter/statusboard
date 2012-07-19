@@ -3,15 +3,26 @@
 	<head>
 		<title>Status</title>
 		
+		<link rel="stylesheet" href="/style/jquery.marquee.min.css"/>
 		<link rel="stylesheet" href="/style/main.css"/>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="/javascript/jquery.marquee.min.js"></script>
+		<script src="/javascript/jquery.linkify.min.js"></script>
+		
 		<script type="text/javascript">
-			$(document.body).ready(function() {
+			$(document).ready(function() {
+				$('#twitter').load('/twitter/search', function(responseText, textStatus) {
+					$('#twitter').find('ul').addClass('marquee');
+					$('#twitter li').linkify();
+					$('.marquee').marquee();
+				});
 				$('#weather').load('/weather/current');
 			});
 		</script>
 	</head>
 	<body>
-		<div id="weather"/>
+		<div id="twitter"></div>
+		<div id="weather"></div>
 	</body>
 </html>
